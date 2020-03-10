@@ -54,6 +54,7 @@ public class GenerateIndex {
         for (int i = 0; i < collect.size(); i++) {
             String line = collect.get(i);
             bw.write(line);
+            bw.write("\n");
             bw.newLine();
             bw.flush();
         }
