@@ -32,23 +32,13 @@ public class 从排序数组中删除重复项 {
 
         int i = 0, j = 0;
         while (i < nums.length) {
-            if (nums[i] == nums[j]) {
-                i++;
-            } else {
+            if (nums[i] != nums[j]) {
                 j++;
                 nums[j] = nums[i];
-                i++;
             }
+            i++;
         }
 
-
-        //int j = 0;
-        //for (int i = 1; i < nums.length; i++) {
-        //    if (nums[j] != nums[i]) {
-        //        j++;
-        //        nums[j] = nums[i];
-        //    }
-        //}
         return j + 1;
     }
 }
