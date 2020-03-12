@@ -8,6 +8,7 @@ import java.util.Arrays;
 /**
  * @author yuan
  * @date 2020/3/10 2:19 下午
+ * https://leetcode-cn.com/problems/valid-anagram/solution/you-xiao-de-zi-mu-yi-wei-ci-by-leetcode/
  * <p>
  * 字母异位词:它是指两个字符串所包含的字母的出现次数都相同,只是顺序不一样
  */
@@ -33,6 +34,7 @@ public class 有效的字母异位词 {
         return Arrays.equals(arr1, arr2);
     }
 
+    //维护一个数组,遍历字符串,s -'a' ++ , t-'a' --,当2个字符串是异位词时,最终++和--会抵消,最后判断数组是否中的数是否都为0即可
     public boolean isAnagram2(String s, String t) {
         //长度判断
         if (s.length() != t.length()) {

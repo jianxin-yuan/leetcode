@@ -26,7 +26,7 @@ public class GenerateIndex {
         File file = new File(baseDir + "/" + pathPrefix);
         List<String> catalog = new ArrayList<>();
         fileList(file, catalog);
-        wirteFile(mergeContent(catalog), readme);
+        writeFile(mergeContent(catalog), readme);
 
     }
 
@@ -47,8 +47,7 @@ public class GenerateIndex {
         return collect;
     }
 
-    private static void wirteFile(List<String> collect, String readme) throws IOException {
-        //创建输出缓冲流对象
+    private static void writeFile(List<String> collect, String readme) throws IOException {
         BufferedWriter bw = new BufferedWriter(new FileWriter(readme));
 
         for (int i = 0; i < collect.size(); i++) {
