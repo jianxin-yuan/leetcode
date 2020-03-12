@@ -34,3 +34,11 @@
 
 [字符串中的第一个唯一字符](src/main/java/primary/string/字符串中的第一个唯一字符.java)
 
+[验证回文串](src/main/java/primary/string/验证回文串.java)
+
+[外观数列](src/main/java/primary/string/外观数列.java)
+
+[实现strStr](src/main/java/primary/string/实现strStr.java)
+
+[字符串转换整数](src/main/java/primary/string/字符串转换整数.java)
+
