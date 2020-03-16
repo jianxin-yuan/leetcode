@@ -1,5 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
+import primary.list.LinkedList;
 
 /**
  * @author yuan
@@ -7,17 +6,16 @@ import java.util.Map;
  */
 public class App {
     public static void main(String[] args) throws Exception {
-        //int[] arr = {8, 4, 7, 2, 0, 1, 9, 5, 3, 6};
-        ////bubbleSort(arr);
-        ////selectionSort(arr);
-        ////insertionSort(arr);
-        ////shellSort(arr);
-        //System.out.println(Arrays.toString(arr));
-
-        Map<Integer, String> map = new HashMap<>();
 
 
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.add("aa");
+        linkedList.add("bb");
+        linkedList.add("cc");
 
+        linkedList.print();
+        System.out.println(linkedList.size());
     }
+
 
 }

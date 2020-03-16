@@ -7,7 +7,7 @@ import java.util.Arrays;
  * @date 2020/3/5 5:22 下午
  * 基础排序算法
  */
-public class BasicSort {
+public class Sort {
     public static void main(String[] args) {
 
         int[] arr = {0, 100, 3, 2, 4, 6, 1, 7, 5, 8, 11, 33, 22, 22};

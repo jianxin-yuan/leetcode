@@ -1,6 +1,6 @@
 # leetcode 学习笔记
 
-[BasicSort](src/main/java/basic/BasicSort.java)
+[Sort](src/main/java/basic/Sort.java)
 
 [Search](src/main/java/basic/Search.java)
 

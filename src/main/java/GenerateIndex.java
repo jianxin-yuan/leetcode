@@ -32,7 +32,7 @@ public class GenerateIndex {
 
     private static List<String> mergeContent(List<String> catalog) {
         List<String> result = catalog.stream()
-                .filter(s -> !s.contains("GenerateIndex.java") && !s.contains("App.java"))
+                .filter(s -> !s.contains("GenerateIndex") && !s.contains("App"))
                 .map(GenerateIndex::urlParse)
                 .collect(Collectors.toList());
 
