@@ -22,6 +22,10 @@ public class GenerateIndex {
     private static String readme = baseDir + "/" + "README.md";
     private static String pathPrefix = "src/main/java/";
 
+    private static String[] excludeDir = {"practice"};
+    private static String[] excludeFile = {"App", "GenerateIndex", "LinkedList", "ListNode"};
+
+
     public static void main(String[] args) throws IOException {
         File file = new File(baseDir + "/" + pathPrefix);
         List<String> catalog = new ArrayList<>();
@@ -30,9 +34,17 @@ public class GenerateIndex {
 
     }
 
+    private static boolean isContains(String s) {
+        for (String s1 : excludeFile) {
+            if (s.contains(s1)) return true;
+        }
+
+        return false;
+    }
+
     private static List<String> mergeContent(List<String> catalog) {
         List<String> result = catalog.stream()
-                .filter(s -> !s.contains("GenerateIndex") && !s.contains("App"))
+                .filter(s -> !isContains(s))
                 .map(GenerateIndex::urlParse)
                 .collect(Collectors.toList());
 
@@ -64,6 +76,7 @@ public class GenerateIndex {
     //[删除排序数组中的重复项](src/main/java/primary/array/从排序数组中删除重复项.java)
     ///Users/yuan/work/idea-project/yuan/leetcode/src/main/java/basic/BasicSort.java
     public static String urlParse(String path) {
+        System.out.println(path);
         String fileName = path.substring(path.lastIndexOf("/") + 1, path.lastIndexOf("."));
         String absolutePath = path.replace(baseDir, "");
         absolutePath = absolutePath.substring(absolutePath.indexOf("/") + 1);
@@ -73,7 +86,10 @@ public class GenerateIndex {
 
     public static void fileList(File file, List<String> catalog) {
         if (file.isDirectory()) {
-            Arrays.stream(Objects.requireNonNull(file.listFiles())).forEach(listFile -> fileList(listFile, catalog));
+            if (!Arrays.asList(excludeDir).contains(file.getName())) {
+                Arrays.stream(Objects.requireNonNull(file.listFiles()))
+                        .forEach(listFile -> fileList(listFile, catalog));
+            }
         } else {
             catalog.add(file.getPath());
         }

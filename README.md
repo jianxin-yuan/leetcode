@@ -16,6 +16,8 @@
 
 [有效的数独](src/main/java/primary/array/有效的数独.java)
 
+[合并两个有序数组](src/main/java/primary/array/合并两个有序数组.java)
+
 [旋转数组](src/main/java/primary/array/旋转数组.java)
 
 [存在重复](src/main/java/primary/array/存在重复.java)
@@ -25,6 +27,18 @@
 [移动零](src/main/java/primary/array/移动零.java)
 
 [只出现一次的数字](src/main/java/primary/array/只出现一次的数字.java)
+
+[环形链表](src/main/java/primary/list/环形链表.java)
+
+[删除链表中的节点](src/main/java/primary/list/删除链表中的节点.java)
+
+[删除链表的倒数第N个节点](src/main/java/primary/list/删除链表的倒数第N个节点.java)
+
+[合并两个有序链表](src/main/java/primary/list/合并两个有序链表.java)
+
+[回文链表](src/main/java/primary/list/回文链表.java)
+
+[反转链表](src/main/java/primary/list/反转链表.java)
 
 [反转字符串](src/main/java/primary/string/反转字符串.java)
 
@@ -41,4 +55,6 @@
 [实现strStr](src/main/java/primary/string/实现strStr.java)
 
 [字符串转换整数](src/main/java/primary/string/字符串转换整数.java)
+
+[最长公共前缀](src/main/java/primary/string/最长公共前缀.java)
 
