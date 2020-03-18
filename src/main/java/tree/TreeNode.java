@@ -128,7 +128,7 @@ public class TreeNode {
         }
     }
 
-    // 后序遍历输出-递归
+    // 后序遍历输出-递归: 左子树-右子树-根
     //输出: 8 ,9 ,4 ,5 ,2 ,6 ,7 ,3 ,1
     public static void postOrder(TreeNode node) {
         if (node != null) {

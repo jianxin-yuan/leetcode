@@ -1,39 +1,30 @@
 package tree;
 
-import org.junit.Assert;
-import org.junit.Test;
+import java.util.Stack;
 
 /**
  * @author yuan
  * @date 2020/3/18 13:35
+ * https://leetcode-cn.com/problems/validate-binary-search-tree/solution/yan-zheng-er-cha-sou-suo-shu-by-leetcode/
  */
 public class 验证二叉搜索树 {
 
-    @Test
-    public void test() {
-        Integer[] arr = {5, 1, 4, null, null, 3, 6};
-        TreeNode root = TreeNode.createTree(arr, 0);
-        Assert.assertFalse(isValidBST(root));
-
-
-        Integer[] arr2 = {2, 1, 3};
-        TreeNode root2 = TreeNode.createTree(arr2, 0);
-        Assert.assertTrue(isValidBST(root2));
-    }
-
+    //利用中序遍历的特性: 左子树-根-右子树的顺序,对二叉搜索树而言.左节点值 < 根节点 < 右节点 , 所以遍历二叉树,判断每一个节点都比前一个节点小
     public boolean isValidBST(TreeNode root) {
-        if (root != null) {
-            boolean res = true;
-            if (root.left != null) {
-                res = root.val > root.left.val;
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode prevNode = null;
+
+        TreeNode node = root;
+        while (!stack.isEmpty() || node != null) {
+            while (node != null) {
+                stack.push(node);
+                node = node.left;
             }
-            if (root.right != null) {
-                res &= root.val < root.right.val;
-            }
-            if (res) {
-                return isValidBST(root.left) && isValidBST(root.right);
-            }
-            return false;
+
+            node = stack.pop();
+            if (prevNode != null && node.val <= prevNode.val) return false;
+            prevNode = node;
+            node = node.right;
         }
         return true;
     }
