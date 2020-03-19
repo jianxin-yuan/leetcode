@@ -1,10 +1,10 @@
-package basic;
+package search;
 
 /**
  * @author yuan
  * @date 2020/3/6 2:45 下午
  */
-public class Search {
+public class 基本查询算法 {
 
     public static void main(String[] args) {
         int[] arr = {2, 3, 12, 15, 20, 22, 22, 23, 44, 55, 111, 878};
