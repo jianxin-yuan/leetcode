@@ -6,6 +6,7 @@ import org.junit.Test;
 /**
  * @author yuan
  * @date 2020/3/12 3:07 下午
+ * https://leetcode-cn.com/problems/implement-strstr/solution/shi-xian-strstr-by-leetcode/
  */
 public class 实现strStr {
 
