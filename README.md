@@ -1,10 +1,18 @@
 # leetcode 学习笔记
 
-[Sort](src/main/java/basic/Sort.java)
+[对称二叉树](src/main/java/tree/对称二叉树.java)
 
-[Search](src/main/java/basic/Search.java)
+[将有序数组转换为二叉搜索树](src/main/java/tree/将有序数组转换为二叉搜索树.java)
 
-[买卖股票的最佳时机II](src/main/java/array/买卖股票的最佳时机II.java)
+[验证二叉搜索树](src/main/java/tree/验证二叉搜索树.java)
+
+[二叉树的层次遍历](src/main/java/tree/二叉树的层次遍历.java)
+
+[二叉树的中序遍历](src/main/java/tree/二叉树的中序遍历.java)
+
+[二叉树的最大深度](src/main/java/tree/二叉树的最大深度.java)
+
+[基础排序算法](src/main/java/sort/基础排序算法.java)
 
 [两个数组的交集](src/main/java/array/两个数组的交集.java)
 
@@ -28,17 +36,21 @@
 
 [只出现一次的数字](src/main/java/array/只出现一次的数字.java)
 
-[环形链表](src/main/java/list/环形链表.java)
+[基本查询算法](src/main/java/search/基本查询算法.java)
 
-[删除链表中的节点](src/main/java/list/删除链表中的节点.java)
+[第一个错误的版本](src/main/java/search/第一个错误的版本.java)
 
-[删除链表的倒数第N个节点](src/main/java/list/删除链表的倒数第N个节点.java)
+[环形链表](src/main/java/link/环形链表.java)
 
-[合并两个有序链表](src/main/java/list/合并两个有序链表.java)
+[删除链表中的节点](src/main/java/link/删除链表中的节点.java)
 
-[回文链表](src/main/java/list/回文链表.java)
+[删除链表的倒数第N个节点](src/main/java/link/删除链表的倒数第N个节点.java)
 
-[反转链表](src/main/java/list/反转链表.java)
+[合并两个有序链表](src/main/java/link/合并两个有序链表.java)
+
+[回文链表](src/main/java/link/回文链表.java)
+
+[反转链表](src/main/java/link/反转链表.java)
 
 [反转字符串](src/main/java/string/反转字符串.java)
 
@@ -57,4 +69,22 @@
 [字符串转换整数](src/main/java/string/字符串转换整数.java)
 
 [最长公共前缀](src/main/java/string/最长公共前缀.java)
+
+[买卖股票的最佳时机II](src/main/java/dynamicprogramming/买卖股票的最佳时机II.java)
+
+[买卖股票的最佳时机IV](src/main/java/dynamicprogramming/买卖股票的最佳时机IV.java)
+
+[买卖股票的最佳时机含手续费](src/main/java/dynamicprogramming/买卖股票的最佳时机含手续费.java)
+
+[打家劫舍](src/main/java/dynamicprogramming/打家劫舍.java)
+
+[最大子序和](src/main/java/dynamicprogramming/最大子序和.java)
+
+[买卖股票的最佳时机](src/main/java/dynamicprogramming/买卖股票的最佳时机.java)
+
+[最佳买卖股票时机含冷冻期](src/main/java/dynamicprogramming/最佳买卖股票时机含冷冻期.java)
+
+[买卖股票的最佳时机III](src/main/java/dynamicprogramming/买卖股票的最佳时机III.java)
+
+[爬楼梯](src/main/java/dynamicprogramming/爬楼梯.java)
 

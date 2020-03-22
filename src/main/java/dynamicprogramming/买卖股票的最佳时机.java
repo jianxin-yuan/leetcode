@@ -4,6 +4,8 @@ package dynamicprogramming;
  * @author yuan
  * @date 2020/3/20 17:05
  * https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/solution/yi-ge-fang-fa-tuan-mie-6-dao-gu-piao-wen-ti-by-l-3/
+ *
+ * 只能交易一次
  */
 public class 买卖股票的最佳时机 {
     //找出数组中2个数间最大的差值,且后一个数大于前一个数
@@ -54,7 +56,29 @@ public class 买卖股票的最佳时机 {
         return dp[length - 1][0];
     }
 
+
+    //简化版本,由于最终状态至于相邻状态有关,不需要维护整个数组,用一个变量保存就行了,空间复杂度O(1)
     public int maxProfit3(int[] prices) {
-        return 0;
+        //base case: dp[-1][0] = 0, dp[-1][1] = -infinity
+        int dp_i_0 = 0, dp_i_1 = Integer.MIN_VALUE;
+        for (int i = 0; i < prices.length; i++) {
+            dp_i_0 = Math.max(dp_i_0, dp_i_1 + prices[i]);
+            dp_i_1 = Math.max(dp_i_1, -prices[i]);
+        }
+        return dp_i_0;
+    }
+
+    //贪心算法，从左向右，维护一个最小值，与每一天的股票价格做差，差最大的为答案
+    public int maxProfit4(int[] prices) {
+        int maxProfit = 0;
+        int minPrice = Integer.MAX_VALUE;
+        for (int price : prices) {
+            if (price < minPrice) {
+                minPrice = price;
+            }
+            maxProfit = Math.max(maxProfit, price - minPrice);
+        }
+
+        return maxProfit;
     }
 }
