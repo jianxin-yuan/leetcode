@@ -1,5 +1,7 @@
 # leetcode 学习笔记
 
+[TreeNode](src/main/java/tree/TreeNode.java)
+
 [对称二叉树](src/main/java/tree/对称二叉树.java)
 
 [将有序数组转换为二叉搜索树](src/main/java/tree/将有序数组转换为二叉搜索树.java)
@@ -11,6 +13,16 @@
 [二叉树的中序遍历](src/main/java/tree/二叉树的中序遍历.java)
 
 [二叉树的最大深度](src/main/java/tree/二叉树的最大深度.java)
+
+[Shuffle](src/main/java/design/Shuffle.java)
+
+[MinStackNotHelper](src/main/java/design/MinStackNotHelper.java)
+
+[MinStack](src/main/java/design/MinStack.java)
+
+[MyStack](src/main/java/design/MyStack.java)
+
+[Generic](src/main/java/design/Generic.java)
 
 [基础排序算法](src/main/java/sort/基础排序算法.java)
 
@@ -36,6 +48,12 @@
 
 [只出现一次的数字](src/main/java/array/只出现一次的数字.java)
 
+[FizzBuzz](src/main/java/math/FizzBuzz.java)
+
+[计数质数](src/main/java/math/计数质数.java)
+
+[三的幂](src/main/java/math/三的幂.java)
+
 [基本查询算法](src/main/java/search/基本查询算法.java)
 
 [第一个错误的版本](src/main/java/search/第一个错误的版本.java)
@@ -43,6 +61,8 @@
 [环形链表](src/main/java/link/环形链表.java)
 
 [删除链表中的节点](src/main/java/link/删除链表中的节点.java)
+
+[返回倒数第k个节点](src/main/java/link/返回倒数第k个节点.java)
 
 [删除链表的倒数第N个节点](src/main/java/link/删除链表的倒数第N个节点.java)
 

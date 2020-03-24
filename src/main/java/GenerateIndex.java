@@ -34,6 +34,7 @@ public class GenerateIndex {
 
     }
 
+    @Deprecated
     private static boolean isContains(String s) {
         for (String s1 : excludeFile) {
             if (s.contains(s1)) return true;
