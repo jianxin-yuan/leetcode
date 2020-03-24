@@ -1,4 +1,4 @@
-package practice;
+package design;
 
 /**
  * @author yuan
@@ -6,7 +6,7 @@ package practice;
  * <p>
  * 泛型应用考察
  */
-public class Practice {
+public class Generic {
 
     public static void main(String[] args) {
         int minInteger = min(new Integer[]{1, 2, 3});//result:1

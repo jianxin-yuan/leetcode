@@ -38,7 +38,7 @@ public class 基础排序算法 {
         }
 
         //选取基准数,将数组分为左右2个小数组
-        int pivot = arr[left];
+        int pivot = arr[left];//第一个元素
         int i = left + 1;
         int j = right;
         while (true) {

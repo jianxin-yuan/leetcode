@@ -1,4 +1,4 @@
-package practice;
+package design;
 
 
 import java.util.Arrays;
