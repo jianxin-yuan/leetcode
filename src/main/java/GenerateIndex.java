@@ -23,7 +23,7 @@ public class GenerateIndex {
     private static String pathPrefix = "src/main/java/";
 
     private static String[] excludeDir = {"practice"};
-    private static String[] excludeFile = {"App", "GenerateIndex", "LinkedList", "ListNode"};
+    private static String[] excludeFile = {"thread.App", "GenerateIndex", "LinkedList", "ListNode"};
 
 
     public static void main(String[] args) throws IOException {
