@@ -5,6 +5,12 @@ package other;
  * @date 2020/3/25 11:34
  *
  * https://leetcode-cn.com/problems/number-of-1-bits/solution/wei-1de-ge-shu-by-leetcode/
+ *
+ *
+ *  & 运算 : 2个都为1,结果为1,否则为0
+ *  | 运算 : 有1个为1,结果为1,2个都为0,结果为0
+ *  ! 运算 : 1变0,0变1
+ *  ^ 运算 : 相同为1,不同为1
  */
 public class 位1的个数 {
 
@@ -38,7 +44,6 @@ public class 位1的个数 {
 
      *
      *
-     *    & 运算 : 2个都为1,结果为1,否则为0
      *
      *    0000.0000.0000.0101
      *    0000.0000.0000.0100
@@ -59,6 +64,7 @@ public class 位1的个数 {
     }
 
     public static void main(String[] args) {
-        hammingWeight2(5);
+
+        System.out.println(3^8);
     }
 }
