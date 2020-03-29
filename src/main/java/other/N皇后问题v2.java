@@ -46,6 +46,10 @@ public class N皇后问题v2 {
             }
             arr[row][i] = 'Q';
             backtrace(row + 1, arr, res);
+            //如果只需要一个解,则可用直接返回
+            //if (res.size() > 0) {
+            //    return;
+            //}
             arr[row][i] = '.';
         }
     }
