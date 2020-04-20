@@ -17,15 +17,29 @@ public class 基础排序算法 {
         //insertionSort(arr);
         //shellSort(arr);
         //mergeSort(arr, 0, arr.length - 1, new int[arr.length]);
-        quickSort(arr, 0, arr.length - 1);
+        //quickSort(arr, 0, arr.length - 1);
+        heapSort(arr);
         System.out.println(Arrays.toString(arr));
+    }
+
+
+    public static int[] heapSort(int[] arr) {
+        //构建一个最小堆
+        BinaryHeap.buildBinaryHeap(arr, arr.length);
+        //将堆顶元素与最后一个元素交换,然后对堆顶元素进行下沉操作
+        for (int i = arr.length - 1; i >= 1; i--) {
+            int temp = arr[i];
+            arr[i] = arr[0];
+            arr[0] = temp;
+            BinaryHeap.downAdjust(arr, 0, i);
+        }
+        return arr;
     }
 
     /**
      * ref : https://mp.weixin.qq.com/s?__biz=Mzg2NzA4MTkxNQ==&mid=2247485191&amp;idx=1&amp;sn=45a43bd77495566db53b419ae82136f5&source=41#wechat_redirect
      * 快速排序: 类似归并排序思想,首先选取一个基准数,将小于基准数的移动到左边,大于基准数的移动到右边,此时,基准数在数组中就是处于正确的排序位置,
      * 然后再分别对左右2个小数组进行同样的处理.直到每个数组都只有一个数时,表示排序完成
-     *
      *
      * @param arr
      * @param left
@@ -55,9 +69,7 @@ public class 基础排序算法 {
             }
 
             //交换i和j对应元素
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
+            swap(arr, i, j);
         }
 
         //交换基准数与j位置的元素,此时,基准数排序完成
@@ -71,11 +83,19 @@ public class 基础排序算法 {
         quickSort(arr, j + 1, right);
     }
 
+    private static void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
 
     /**
      * 归并排序: 将一个大的数组不断分为小数组,直到每个小数组都只有一个元素.此时所有的小数组都是有序的(单个元素有序)
      * 此时,只需要将所有的小数组中最小的元素不断与其他数组最小值比较,然后放入一个辅助数组中,当所有数组处理完后.
      * 辅助数组中的数据就是排序完成的数据了.
+     * <p>
+     * https://mp.weixin.qq.com/s/YNF-6vY5m2Q_kEXJbep5NQ
      *
      * @param arr
      * @param left  左边界
@@ -129,6 +149,8 @@ public class 基础排序算法 {
      * 希尔排序:   是对插入排序的一种优化,通过将数组按间隔分为几个组,对每个组进行插入排序,
      * 调整整个数组的大体顺序,然后逐渐减小间隔,重复进行插入排序,当间隔为1时,进行最后一次插入排序
      * 此时,数组基本是有序的,可以减少插入排序的移动量
+     * <p>
+     * https://mp.weixin.qq.com/s/4kJdzLB7qO1sES2FEW0Low
      *
      * @param arr
      * @return
@@ -156,6 +178,8 @@ public class 基础排序算法 {
      * * 2,4,1,5,7 --> i=2,j=1,temp=1,arr[1]=4 --> arr[2]=4 --> 2,4,4,5,7
      * * --> i=2,j=0,temp=1,arr[0]=2 --> arr[1]=2 --> 2,2,4,5,7
      * * --> i=2,j=-1,temp=1 --> arr[0]=1 --> 1,2,4,5,7
+     * <p>
+     * https://mp.weixin.qq.com/s/VNvGXsTpGgzUhQlRJ1GsTA
      *
      * @param arr
      * @return
@@ -165,8 +189,10 @@ public class 基础排序算法 {
             int j;
             int temp = arr[i];
             for (j = i - 1; j >= 0 && arr[j] > temp; j--) {
+                //将j位置元素后移一位
                 arr[j + 1] = arr[j];
             }
+            //在目标点插入arr[i]的初始值
             arr[j + 1] = temp;
         }
 
@@ -188,15 +214,13 @@ public class 基础排序算法 {
                 }
             }
             // 交换本次循环中最小值与初始循环位置的值
-            int temp = arr[index];
-            arr[index] = arr[i];
-            arr[i] = temp;
+            swap(arr, index, i);
         }
     }
 
 
     /**
-     * 冒泡排序: 每次比较相邻2个数.大的放后面.进过一轮排序后,最大的数落到最后.进过几轮后,没有可交换的表示数据处理完成
+     * 冒泡排序: 每次比较相邻2个数.大的放后面.经过一轮排序后,最大的数落到最后.进过几轮后,没有可交换的表示数据处理完成
      *
      * @param arr
      */
@@ -207,9 +231,7 @@ public class 基础排序算法 {
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     flag = false;
-                    int temp = arr[j + 1];
-                    arr[j + 1] = arr[j];
-                    arr[j] = temp;
+                    swap(arr, j + 1, j);
                 }
             }
 
