@@ -7,6 +7,7 @@ package sort;
  * https://mp.weixin.qq.com/s?__biz=Mzg2NzA4MTkxNQ==&mid=2247485231&amp;idx=1&amp;sn=8dfdc04bd209fba3077269faabe7c36f&source=41#wechat_redirect
  * <p>
  * 二叉堆: 一般分为最小堆(左右节点都比根节点大)和最大堆(左右节点都比根节点小)
+ * 使用数组实现
  * 根据完全二叉树的特点，假如一个节点的下标为n,则可以求得它左孩子的下标为：2n+1；右孩子下标为：2n+2。
  * <p>
  * <p>

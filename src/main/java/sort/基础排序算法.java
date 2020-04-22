@@ -23,23 +23,81 @@ public class 基础排序算法 {
     }
 
 
-    public static int[] heapSort(int[] arr) {
-        //构建一个最小堆
-        BinaryHeap.buildBinaryHeap(arr, arr.length);
-        //将堆顶元素与最后一个元素交换,然后对堆顶元素进行下沉操作
-        for (int i = arr.length - 1; i >= 1; i--) {
-            int temp = arr[i];
-            arr[i] = arr[0];
-            arr[0] = temp;
-            BinaryHeap.downAdjust(arr, 0, i);
+    /**
+     * 堆排序
+     * <p>
+     * 时间复杂度：O(nlogn)
+     * 空间复杂度：O(1)
+     * 非稳定排序
+     * 原地排序
+     *
+     * @param arr
+     * @return
+     */
+    public static void heapSort(int[] arr) {
+        //构建一个二叉堆(大顶堆),然后删除根节点(将根节点移到数组最后),堆中元素删除完成后数组有序排列
+        buildBinaryHeap(arr);
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+            //交换i和第一个元素
+            swap(arr, 0, i);
+            //调整二叉堆
+            downAdjust(arr, 0, i);
         }
-        return arr;
+
+    }
+
+
+    /**
+     * 根据一个无序数组构建一个二叉堆(这里使用大顶堆)
+     *
+     * @param arr
+     */
+    public static void buildBinaryHeap(int[] arr) {
+        //从最后一个非叶子节点开始进行下沉操作
+        for (int i = (arr.length - 2) / 2; i >= 0; i--) {
+            downAdjust(arr, i, arr.length);
+        }
+    }
+
+    /**
+     * 下沉操作
+     *
+     * @param arr    数组
+     * @param parent 父节点
+     * @param length 长度
+     */
+    public static void downAdjust(int[] arr, int parent, int length) {
+        //左孩子
+        int child = 2 * parent + 1;
+        int temp = arr[parent];
+        while (child < length) {
+            //右孩子
+            int rightChild = child + 1;
+            if (rightChild < length && arr[child] < arr[rightChild]) {
+                child = rightChild;
+            }
+
+            if (temp >= arr[child]) {
+                break;
+            }
+
+            arr[parent] = arr[child];
+            parent = child;
+            child = 2 * parent + 1;
+        }
+        arr[parent] = temp;
     }
 
     /**
      * ref : https://mp.weixin.qq.com/s?__biz=Mzg2NzA4MTkxNQ==&mid=2247485191&amp;idx=1&amp;sn=45a43bd77495566db53b419ae82136f5&source=41#wechat_redirect
      * 快速排序: 类似归并排序思想,首先选取一个基准数,将小于基准数的移动到左边,大于基准数的移动到右边,此时,基准数在数组中就是处于正确的排序位置,
      * 然后再分别对左右2个小数组进行同样的处理.直到每个数组都只有一个数时,表示排序完成
+     * <p>
+     * 时间复杂度：O(nlogn)
+     * 空间复杂度：O(logn)
+     * 非稳定排序
+     * 原地排序
      *
      * @param arr
      * @param left
@@ -96,6 +154,11 @@ public class 基础排序算法 {
      * 辅助数组中的数据就是排序完成的数据了.
      * <p>
      * https://mp.weixin.qq.com/s/YNF-6vY5m2Q_kEXJbep5NQ
+     * <p>
+     * 时间复杂度：O(nlogn)
+     * 空间复杂度：O(n)
+     * 稳定排序
+     * 非原地排序
      *
      * @param arr
      * @param left  左边界
@@ -151,6 +214,11 @@ public class 基础排序算法 {
      * 此时,数组基本是有序的,可以减少插入排序的移动量
      * <p>
      * https://mp.weixin.qq.com/s/4kJdzLB7qO1sES2FEW0Low
+     * <p>
+     * 时间复杂度：O(nlogn)
+     * 空间复杂度：O(1)
+     * 非稳定排序
+     * 原地排序
      *
      * @param arr
      * @return
@@ -180,6 +248,11 @@ public class 基础排序算法 {
      * * --> i=2,j=-1,temp=1 --> arr[0]=1 --> 1,2,4,5,7
      * <p>
      * https://mp.weixin.qq.com/s/VNvGXsTpGgzUhQlRJ1GsTA
+     * <p>
+     * 时间复杂度：O(n2)
+     * 空间复杂度：O(1)
+     * 稳定排序
+     * 原地排序
      *
      * @param arr
      * @return
@@ -200,6 +273,11 @@ public class 基础排序算法 {
 
     /**
      * 选择排序: 先找到最小的数,放到首位,然后在剩余数据中找最小的数,放到第二位,以此类推.
+     * <p>
+     * 时间复杂度：O(n2)
+     * 空间复杂度：O(1)
+     * 非稳定排序
+     * 原地排序
      *
      * @param arr
      * @return
@@ -221,6 +299,11 @@ public class 基础排序算法 {
 
     /**
      * 冒泡排序: 每次比较相邻2个数.大的放后面.经过一轮排序后,最大的数落到最后.进过几轮后,没有可交换的表示数据处理完成
+     * <p>
+     * 时间复杂度：O(n2)
+     * 空间复杂度：O(1)
+     * 稳定排序
+     * 原地排序
      *
      * @param arr
      */
