@@ -16,6 +16,8 @@
 
 [Shuffle](src/main/java/design/Shuffle.java)
 
+[LRUCache](src/main/java/design/LRUCache.java)
+
 [MinStackNotHelper](src/main/java/design/MinStackNotHelper.java)
 
 [MinStack](src/main/java/design/MinStack.java)
@@ -25,6 +27,10 @@
 [Generic](src/main/java/design/Generic.java)
 
 [基础排序算法](src/main/java/sort/基础排序算法.java)
+
+[BinaryHeap](src/main/java/sort/BinaryHeap.java)
+
+[乘积最大子数组](src/main/java/array/乘积最大子数组.java)
 
 [两个数组的交集](src/main/java/array/两个数组的交集.java)
 
@@ -38,6 +44,12 @@
 
 [合并两个有序数组](src/main/java/array/合并两个有序数组.java)
 
+[鸡蛋掉落](src/main/java/array/鸡蛋掉落.java)
+
+[搜索二维矩阵](src/main/java/array/搜索二维矩阵.java)
+
+[多数元素](src/main/java/array/多数元素.java)
+
 [旋转数组](src/main/java/array/旋转数组.java)
 
 [存在重复](src/main/java/array/存在重复.java)
@@ -46,7 +58,29 @@
 
 [移动零](src/main/java/array/移动零.java)
 
+[搜索二维矩II](src/main/java/array/搜索二维矩II.java)
+
 [只出现一次的数字](src/main/java/array/只出现一次的数字.java)
+
+[缺失数字](src/main/java/other/缺失数字.java)
+
+[杨辉三角](src/main/java/other/杨辉三角.java)
+
+[N皇后问题v2](src/main/java/other/N皇后问题v2.java)
+
+[BackTrace](src/main/java/other/BackTrace.java)
+
+[有效的括号](src/main/java/other/有效的括号.java)
+
+[位1的个数](src/main/java/other/位1的个数.java)
+
+[N皇后问题](src/main/java/other/N皇后问题.java)
+
+[颠倒二进制位](src/main/java/other/颠倒二进制位.java)
+
+[汉明距离](src/main/java/other/汉明距离.java)
+
+[罗马数字转整数](src/main/java/math/罗马数字转整数.java)
 
 [FizzBuzz](src/main/java/math/FizzBuzz.java)
 
@@ -72,6 +106,8 @@
 
 [反转链表](src/main/java/link/反转链表.java)
 
+[分割回文串](src/main/java/string/分割回文串.java)
+
 [反转字符串](src/main/java/string/反转字符串.java)
 
 [整数反转](src/main/java/string/整数反转.java)
@@ -88,7 +124,11 @@
 
 [字符串转换整数](src/main/java/string/字符串转换整数.java)
 
+[单词拆分](src/main/java/string/单词拆分.java)
+
 [最长公共前缀](src/main/java/string/最长公共前缀.java)
+
+[App](src/main/java/App.java)
 
 [买卖股票的最佳时机II](src/main/java/dynamicprogramming/买卖股票的最佳时机II.java)
 
@@ -107,4 +147,14 @@
 [买卖股票的最佳时机III](src/main/java/dynamicprogramming/买卖股票的最佳时机III.java)
 
 [爬楼梯](src/main/java/dynamicprogramming/爬楼梯.java)
+
+[FizzBuzzForSemaphore](src/main/java/thread/FizzBuzzForSemaphore.java)
+
+[FizzBuzzForObjectLock](src/main/java/thread/FizzBuzzForObjectLock.java)
+
+[App](src/main/java/thread/App.java)
+
+[FizzBuzzForReentrantLock2](src/main/java/thread/FizzBuzzForReentrantLock2.java)
+
+[FizzBuzzForReentrantLock](src/main/java/thread/FizzBuzzForReentrantLock.java)
 
