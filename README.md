@@ -1,18 +1,104 @@
 # leetcode 学习笔记
 
-[TreeNode](src/main/java/tree/TreeNode.java)
 
-[对称二叉树](src/main/java/tree/对称二叉树.java)
+### 字符串
 
-[将有序数组转换为二叉搜索树](src/main/java/tree/将有序数组转换为二叉搜索树.java)
+[分割回文串](src/main/java/string/PalindromePartitioning.java)
 
-[验证二叉搜索树](src/main/java/tree/验证二叉搜索树.java)
+[反转字符串](src/main/java/string/ReverseString.java)
 
-[二叉树的层次遍历](src/main/java/tree/二叉树的层次遍历.java)
+[整数反转](src/main/java/string/ReverseInteger.java)
 
-[二叉树的中序遍历](src/main/java/tree/二叉树的中序遍历.java)
+[有效的字母异位词](src/main/java/string/ValidAnagram.java)
 
-[二叉树的最大深度](src/main/java/tree/二叉树的最大深度.java)
+[字符串中的第一个唯一字符](src/main/java/string/FirstUniqueCharacterInAString.java)
+
+[验证回文串](src/main/java/string/ValidPalindrome.java)
+
+[外观数列](src/main/java/string/CountAndSay.java)
+
+[实现strStr](src/main/java/string/ImplementStrstr.java)
+
+[字符串转换整数](src/main/java/string/StringToIntegerAtoi.java)
+
+[最长公共前缀](src/main/java/string/LongestCommonPrefix.java)
+
+### 数组
+
+[乘积最大子数组](src/main/java/array/MaximumProductSubarray.java)
+
+[两个数组的交集](src/main/java/array/IntersectionOfTwoArrays.java)
+
+[从排序数组中删除重复项](src/main/java/array/RemoveDuplicatesFromSortedArray.java)
+
+[两数之和](src/main/java/array/TwoSum.java)
+
+[加一](src/main/java/array/PlusOne.java)
+
+[有效的数独](src/main/java/array/ValidSudoku.java)
+
+[合并两个有序数组](src/main/java/array/MergeSortedArray.java)
+
+[搜索二维矩阵](src/main/java/array/SearchA2dMatrix.java)
+
+[搜索二维矩II](src/main/java/array/SearchA2dMatrixIi.java)
+
+[多数元素](src/main/java/array/MajorityElement.java)
+
+[旋转数组](src/main/java/array/RotateArray.java)
+
+[存在重复](src/main/java/array/ContainsDuplicate.java)
+
+[旋转图像](src/main/java/array/RotateImage.java)
+
+[移动零](src/main/java/array/MoveZeroes.java)
+
+[只出现一次的数字](src/main/java/array/SingleNumber.java)
+
+### 排序
+
+[基础排序算法](src/main/java/sort/Sort.java)
+
+[BinaryHeap](src/main/java/sort/BinaryHeap.java)
+
+### 查询
+[二分查询算法](src/main/java/search/Search.java)
+
+[第一个错误的版本](src/main/java/search/FirstBadVersion.java)
+
+### 二叉树
+
+[对称二叉树](src/main/java/tree/SymmetricTree.java)
+
+[将有序数组转换为二叉搜索树](src/main/java/tree/ConvertSortedArrayToBinarySearchTree.java)
+
+[验证二叉搜索树](src/main/java/tree/ValidateBinarySearchTree.java)
+
+[二叉树的层次遍历](src/main/java/tree/BinaryTreeLevelOrderTraversalIi.java)
+
+[二叉树的中序遍历](src/main/java/tree/BinaryTreeInorderTraversal.java)
+
+[二叉树的最大深度](src/main/java/tree/MaximumDepthOfBinaryTree.java)
+
+
+### 链表
+
+[环形链表](src/main/java/link/LinkedListCycle.java)
+
+[删除链表中的节点](src/main/java/link/DeleteNodeInALinkedList.java)
+
+[返回倒数第k个节点](src/main/java/link/KthNodeFromEndOfListLcci.java)
+
+[删除链表的倒数第N个节点](src/main/java/link/RemoveNthNodeFromEndOfList.java)
+
+[合并两个有序链表](src/main/java/link/MergeTwoSortedLists.java)
+
+[回文链表](src/main/java/link/PalindromeLinkedList.java)
+
+[反转链表](src/main/java/link/ReverseLinkedList.java)
+
+
+### 其他
 
 [Shuffle](src/main/java/design/Shuffle.java)
 
@@ -26,135 +112,51 @@
 
 [Generic](src/main/java/design/Generic.java)
 
-[基础排序算法](src/main/java/sort/基础排序算法.java)
+[缺失数字](src/main/java/other/MissingNumber.java)
 
-[BinaryHeap](src/main/java/sort/BinaryHeap.java)
-
-[乘积最大子数组](src/main/java/array/乘积最大子数组.java)
-
-[两个数组的交集](src/main/java/array/两个数组的交集.java)
-
-[从排序数组中删除重复项](src/main/java/array/从排序数组中删除重复项.java)
-
-[两数之和](src/main/java/array/两数之和.java)
-
-[加一](src/main/java/array/加一.java)
-
-[有效的数独](src/main/java/array/有效的数独.java)
-
-[合并两个有序数组](src/main/java/array/合并两个有序数组.java)
-
-[鸡蛋掉落](src/main/java/array/鸡蛋掉落.java)
-
-[搜索二维矩阵](src/main/java/array/搜索二维矩阵.java)
-
-[多数元素](src/main/java/array/多数元素.java)
-
-[旋转数组](src/main/java/array/旋转数组.java)
-
-[存在重复](src/main/java/array/存在重复.java)
-
-[旋转图像](src/main/java/array/旋转图像.java)
-
-[移动零](src/main/java/array/移动零.java)
-
-[搜索二维矩II](src/main/java/array/搜索二维矩II.java)
-
-[只出现一次的数字](src/main/java/array/只出现一次的数字.java)
-
-[缺失数字](src/main/java/other/缺失数字.java)
-
-[杨辉三角](src/main/java/other/杨辉三角.java)
-
-[N皇后问题v2](src/main/java/other/N皇后问题v2.java)
+[杨辉三角](src/main/java/other/PascalsTriangle.java)
 
 [BackTrace](src/main/java/other/BackTrace.java)
 
-[有效的括号](src/main/java/other/有效的括号.java)
+[有效的括号](src/main/java/other/ValidParentheses.java)
 
-[位1的个数](src/main/java/other/位1的个数.java)
+[位1的个数](src/main/java/other/NumberOf1Bits.java)
 
-[N皇后问题](src/main/java/other/N皇后问题.java)
+[N皇后问题](src/main/java/other/NQueens.java)
 
-[颠倒二进制位](src/main/java/other/颠倒二进制位.java)
+[颠倒二进制位](src/main/java/other/ReverseBits.java)
 
-[汉明距离](src/main/java/other/汉明距离.java)
+[汉明距离](src/main/java/other/HammingDistance.java)
 
-[罗马数字转整数](src/main/java/math/罗马数字转整数.java)
+
+### 数学问题
+
+[罗马数字转整数](src/main/java/math/RomanToInteger.java)
 
 [FizzBuzz](src/main/java/math/FizzBuzz.java)
 
-[计数质数](src/main/java/math/计数质数.java)
+[计数质数](src/main/java/math/CountPrimes.java)
 
-[三的幂](src/main/java/math/三的幂.java)
+[三的幂](src/main/java/math/PowerOfThree.java)
 
-[基本查询算法](src/main/java/search/基本查询算法.java)
 
-[第一个错误的版本](src/main/java/search/第一个错误的版本.java)
+### 动态规划
 
-[环形链表](src/main/java/link/环形链表.java)
+[买卖股票的最佳时机](src/main/java/dynamicprogramming/StockTrading1.java)
 
-[删除链表中的节点](src/main/java/link/删除链表中的节点.java)
+[买卖股票的最佳时机II](src/main/java/dynamicprogramming/StockTrading2.java)
 
-[返回倒数第k个节点](src/main/java/link/返回倒数第k个节点.java)
+[买卖股票的最佳时机III](src/main/java/dynamicprogramming/StockTrading3.java)
 
-[删除链表的倒数第N个节点](src/main/java/link/删除链表的倒数第N个节点.java)
+[买卖股票的最佳时机IV](src/main/java/dynamicprogramming/StockTrading4.java)
 
-[合并两个有序链表](src/main/java/link/合并两个有序链表.java)
+[买卖股票的最佳时机含手续费](src/main/java/dynamicprogramming/BestTimeToBuyAndSellStockWithTransactionFee.java)
 
-[回文链表](src/main/java/link/回文链表.java)
+[最佳买卖股票时机含冷冻期](src/main/java/dynamicprogramming/BestTimeToBuyAndSellStockWithCooldown.java)
 
-[反转链表](src/main/java/link/反转链表.java)
+[打家劫舍](src/main/java/dynamicprogramming/HouseRobber.java)
 
-[分割回文串](src/main/java/string/分割回文串.java)
+[最大子序和](src/main/java/dynamicprogramming/MaximumSubarray.java)
 
-[反转字符串](src/main/java/string/反转字符串.java)
-
-[整数反转](src/main/java/string/整数反转.java)
-
-[有效的字母异位词](src/main/java/string/有效的字母异位词.java)
-
-[字符串中的第一个唯一字符](src/main/java/string/字符串中的第一个唯一字符.java)
-
-[验证回文串](src/main/java/string/验证回文串.java)
-
-[外观数列](src/main/java/string/外观数列.java)
-
-[实现strStr](src/main/java/string/实现strStr.java)
-
-[字符串转换整数](src/main/java/string/字符串转换整数.java)
-
-[单词拆分](src/main/java/string/单词拆分.java)
-
-[最长公共前缀](src/main/java/string/最长公共前缀.java)
-
-[App](src/main/java/App.java)
-
-[买卖股票的最佳时机II](src/main/java/dynamicprogramming/买卖股票的最佳时机II.java)
-
-[买卖股票的最佳时机IV](src/main/java/dynamicprogramming/买卖股票的最佳时机IV.java)
-
-[买卖股票的最佳时机含手续费](src/main/java/dynamicprogramming/买卖股票的最佳时机含手续费.java)
-
-[打家劫舍](src/main/java/dynamicprogramming/打家劫舍.java)
-
-[最大子序和](src/main/java/dynamicprogramming/最大子序和.java)
-
-[买卖股票的最佳时机](src/main/java/dynamicprogramming/买卖股票的最佳时机.java)
-
-[最佳买卖股票时机含冷冻期](src/main/java/dynamicprogramming/最佳买卖股票时机含冷冻期.java)
-
-[买卖股票的最佳时机III](src/main/java/dynamicprogramming/买卖股票的最佳时机III.java)
-
-[爬楼梯](src/main/java/dynamicprogramming/爬楼梯.java)
-
-[FizzBuzzForSemaphore](src/main/java/thread/FizzBuzzForSemaphore.java)
-
-[FizzBuzzForObjectLock](src/main/java/thread/FizzBuzzForObjectLock.java)
-
-[App](src/main/java/thread/App.java)
-
-[FizzBuzzForReentrantLock2](src/main/java/thread/FizzBuzzForReentrantLock2.java)
-
-[FizzBuzzForReentrantLock](src/main/java/thread/FizzBuzzForReentrantLock.java)
+[爬楼梯](src/main/java/dynamicprogramming/ClimbingStairs.java)
 
