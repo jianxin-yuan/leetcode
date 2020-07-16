@@ -51,6 +51,8 @@ public class Sort {
     /**
      * 根据一个无序数组构建一个二叉堆(这里使用大顶堆)
      *
+     * index = 2n+2 ==> n = (index-2)/2
+     *
      * @param arr
      */
     public static void buildBinaryHeap(int[] arr) {
@@ -68,7 +70,7 @@ public class Sort {
      * @param length 长度
      */
     public static void downAdjust(int[] arr, int parent, int length) {
-        //左孩子
+        //左孩子 = 2n+1
         int child = 2 * parent + 1;
         int temp = arr[parent];
         while (child < length) {

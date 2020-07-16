@@ -42,7 +42,7 @@ public class RemoveNthNodeFromEndOfList {
         return dummy.next;
     }
 
-    //利用dummy 和双指针,一个指针先向前移动n+1位,然后2个指针同时移动,知道第一个指针为null,
+    //利用dummy 和双指针,一个指针先向前移动n+1位,然后2个指针同时移动,直到第一个指针为null,
     //此时第二个指针指向的节点就是需要被删除的节点的上一位,将其next节点改为next.next即可
     public ListNode removeNthFromEnd1(ListNode head, int n) {
         ListNode dummy = new ListNode(0);

@@ -1,7 +1,5 @@
 package array;
 
-import java.util.Arrays;
-
 /**
  * @author yuan
  * @date 2020/3/29 12:48 下午
@@ -49,39 +47,21 @@ public class SearchA2dMatrix {
         return false;
     }
 
+
     public static boolean searchMatrix2(int[][] matrix, int target) {
         if (matrix.length == 0 || matrix[0].length == 0) {
             return false;
         }
 
-        int row = 0;
-        int col = matrix[0].length - 1;
-        while (row < matrix.length) {
+        int row = matrix.length - 1;
+        int col = 0;
+        while (row >= 0 && col <= matrix[row].length - 1) {
             if (matrix[row][col] == target) {
                 return true;
             } else if (matrix[row][col] > target) {
-                //因为每一个都是有序的,所以对每行可以使用二分查找进一步加快搜索速度
-                //return binarySearch(matrix[row], target);
-                return Arrays.binarySearch(matrix[row], target) != -1;
+                row--;
             } else {
-                row++;
-            }
-        }
-        return false;
-    }
-
-    public static boolean binarySearch(int[] arr, int target) {
-        int left = 0;
-        //因为最后一个已经判断过了,这里不用再次判断
-        int right = arr.length - 2;
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-            if (arr[mid] == target) {
-                return true;
-            } else if (arr[mid] > target) {
-                right = --mid;
-            } else {
-                left = ++mid;
+                col++;
             }
         }
         return false;
@@ -94,10 +74,10 @@ public class SearchA2dMatrix {
                 {10, 11, 16, 20},
                 {23, 30, 34, 50}
         };
-        System.out.println(searchMatrix2(arr, 3));
-        System.out.println(searchMatrix2(arr, 31));
-
-
-        System.out.println(Arrays.binarySearch(arr[0], 3));
+        System.out.println(searchMatrix(arr, 3));
+        System.out.println(searchMatrix(arr, 31));
+        System.out.println("====");
+        System.out.println(searchMatrix(arr, 3));
+        System.out.println(searchMatrix(arr, 31));
     }
 }
